@@ -63,9 +63,9 @@ class grs:
             self.db.append(self.r.readLegacyGame(i))
     
     def compute(self, no, depth):
+        prevDB = self.db
         self.l1 = {}
         self.l2 = {}
-        prevDB = self.db
         for i in range(0, depth):
             # print(str(i + 1), 'out of', str(depth))
             for ii, iii in enumerate(self.db):
@@ -82,4 +82,3 @@ class grs:
             players[i] = self.getPlayer(i, self.l2)
         return players
         
-

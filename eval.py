@@ -35,7 +35,7 @@ class Eval:
                         pR += rating
                         pDr = p[0]
                         pV = p[1]
-        kFactor = (10 + 100 * abs(pV)) * mPn
+        kFactor = (10 + 190 * abs(pV)) * mPn
         winProb = tR / cR
         contribution = pR / tR
         deviation = result[0] - winProb
